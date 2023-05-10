@@ -16,9 +16,11 @@ endif()
 project(BlankNGLBuild)
 # This is the name of the Exe change this and it will change everywhere
 set(TargetName BlankNGL)
+
+set(CMAKE_PREFIX_PATH "C:\\Qt\\5.15.2\\msvc2019_64")
 # This will include the file NGLConfig.cmake, you need to add the location to this either using
 # -DCMAKE_PREFIX_PATH=~/NGL or as a system environment variable. 
-find_package(NGL CONFIG REQUIRED)
+# find_package(NGL CONFIG REQUIRED)
 # Instruct CMake to run moc automatically when needed (Qt projects only)
 set(CMAKE_AUTOMOC ON)
 # find Qt libs
